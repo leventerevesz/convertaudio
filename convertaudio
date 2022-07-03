@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# == 0 -o $1 == "-h" -o $1 == "--help" ]
+if [ $# -eq 0 ] || [ $1 == "-h" ] || [ $1 == "--help" ]
 then 
     echo "Converts the audio stream of a film to AAC format."
     echo "Creates a copy next to the original file. Only works with .mkv files."
