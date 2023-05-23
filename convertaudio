@@ -29,7 +29,7 @@ echo ""
 echo $ffmpeg_command
 echo ""
 
-nice -20 $ffmpeg_command && \
+nice 19 $ffmpeg_command && \
 (
     chgrp --reference $filename $output_filename
     echo ""
